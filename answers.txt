@@ -10,7 +10,7 @@ git pull : git fetch + git merge . Hem verileri indiri hemde projemize gerekli d
 Eğer takım arkadaşımız "kodlarımı gönderdim, benim geliştirmemin üzerine devam et" derse ve gönderdiği kodları "git pull" ile lokalimize alamıyorsak nerelerde hata yapılmış olabilir?
 
 merge conflickte olabilir.
--------------
+--------------
 "git fetch origin" komutundaki "origin" neye karşılık gelmektedir?
 
 uzak repodaki adresin adı.
