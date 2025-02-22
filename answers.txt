@@ -1,0 +1,105 @@
+Git Nedir?
+
+Git dağıtık süremleri kontrol etmek için kullanılır ,versiyonları kontrol etmek yazılım geliştirme süreçlerini kolaylaştırmak için kullanılır.
+-------------
+"git pull" ile "git fetch" komutlarının farkı nedir?
+
+git fetch : Uzaktaki repodaki verileri kendi localimize indirir 
+git pull : git fetch + git merge . Hem verileri indiri hemde projemize gerekli dosyaları ve değişiklikleri indir.
+-------------
+Eğer takım arkadaşımız "kodlarımı gönderdim, benim geliştirmemin üzerine devam et" derse ve gönderdiği kodları "git pull" ile lokalimize alamıyorsak nerelerde hata yapılmış olabilir?
+
+merge conflickte olabilir.
+-------------
+"git fetch origin" komutundaki "origin" neye karşılık gelmektedir?
+
+uzak repodaki adresin adı.
+-------------
+"HEAD" kelimesi neyi temsil etmektedir?
+
+şuan üstüne çalıştığımız commiti ifade etmektedir
+-------------
+"Staging Area" ya da "Index" diye isimlendirilen bölge tam olarak ne demektir?
+
+Staging Area : yaptığımız değişiklikleri tuttuğumuz ara alan.
+--------------
+"Untracked file" ne demektir?
+
+git tarafından takip edilmeyen dosyalar denir.
+--------------
+".git" klasörünü silersek ne olur?
+
+git klasörü meta verileri içeiri ve artık versiyon kontrolü yapamayız.
+-------------
+Kendi lokalimizde her "git init" komutunu kullanıdığımızda otomatik olarak "ReadMe.md" dosyası oluşturulmasını istiyorsak ne yapmalıyız?
+
+kendi templatize ReadMe yi tanımlarsak bundan sonra her çağırdımızda gelir.
+-------------
+Git konusunda bahsi geçen "branch" yapısı nedir? Bize ne sağlar?
+
+branch dallanmadır geliştreceğimi projeleri farkı alanlarda geliştirer karşılıkliği engeller. Birden çok yazılımcını paralel olarak çalışmasını sağlar.
+-------------
+Sıfırdan bir "branch" nasıl oluşturabiliriz?
+
+git checkout -b <branch-adi>
+-------------
+Sıfırdan bir "branch" nasıl oluşturabiliriz?
+
+git checkout <branch-adi>
+-------------
+ "git clone" komutunu kullanırken belirli bir spesifik branch'i sadece çekmek istiyorsak nasıl yapabiliriz?
+
+ git clone -b <branch-adi> <repository-url>
+ ------------
+ "Merge conflict" ne demektir?
+
+ aynı branch daki aynı dosayda farklı komutlar olmasıdır.
+ ------------
+ "git log" komutu ile hangi bilgileri görebiliriz?
+ 
+ commit geçmişlerini gösterir
+ ------------
+"git diff" ile kaç farklı iki durumun arasındaki değişiklikleri görebiliriz?
+
+Çalışma Dizini vs Staging
+--------------
+Git reset ile neyi geri alıyoruz?
+
+staging areadki ve commit edilmiş değişiklikleri geri alıyoruz
+--------------
+ "git commit" ile "git push" arasındaki fark nedir?
+
+ git commit local repository e kayıt eder 
+ git push Uzaktaki sunucuya kayıt eder
+ --------------
+Atomic commit ne demektir?
+
+commitleri belirli kurral çerçevseinde yazmaktır.
+---------------
+Repository ne demektir?
+
+bir projenin commit bilgileri sürüm kontrollerin içeren dosyadır.
+---------------
+"git tag" nedir? "git branch"’ten farkı nedir?
+
+git tag :sürümlere etiketlemek için kullanılır.
+git brach : projede dallanma için kullanılır
+---------------
+Git'i görsel olarak kullanabilmek için hangi üçüncü taraf araçları ve uygulamaları kullanabiliriz?
+
+girKraken
+vs code da uygun 
+--------------
+"GitHub" ile "git" arasındaki fark nedir? GitHub benzeri diğer siteler nelerdir?
+git:Versiyon Kontrol sistemdir
+github:Repositoryleri barındır.
+bitbucket
+--------------
+Main ya da master branch'inin diğer branchlerden farkı nedir?
+
+main projenın ana breachdidir diğeleri yan dallarıdır.
+---------------
+".gitignore" dosyası nedir ve ne amaçla kullanılır?
+
+git izlemesini istemedğimiz dosyları buraya belirtiriz.
+---------------
